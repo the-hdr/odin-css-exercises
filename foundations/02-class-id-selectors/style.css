@@ -1,0 +1,28 @@
+body
+{
+    font-family: Ubuntu, sans-serif;
+}
+
+.odd-numbered-element
+{
+    background-color: rgb(255, 168, 183);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#second-element
+{
+    color: blue;
+    font-size: 36px;
+}
+
+#third-element
+{
+    font-size: 24px;
+}
+
+#fourth-element
+{
+    background-color: rgb(146, 255, 146);
+    font-size: 24px;
+    font-weight: 900;
+}
