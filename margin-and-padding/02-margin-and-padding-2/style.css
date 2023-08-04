@@ -13,11 +13,16 @@ body {
 
 .title {
   margin-top: 0px;
+  margin-bottom: 10px;
+
   background: #e3f4ff;
   padding: 2%;
 }
 
 .content {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  
   background: #e3f4ff;
   padding: 2%;
 }
