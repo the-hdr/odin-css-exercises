@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
+html, body
+{
   height: 100%;
 }
 
-body {
+body
+{
   font-family: Roboto, sans-serif;
   margin: 0;
   background: #aaa;
@@ -15,14 +17,23 @@ body {
   justify-content: center;
 }
 
-.modal {
+.modal
+{
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  /* padding: 1rem; */
 }
 
-.icon {
+.button-link
+{
+  text-decoration: none;
+}
+
+.icon
+{
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -33,9 +44,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* padding:  */
 }
 
-.close-button {
+.close-button
+{
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -50,20 +64,56 @@ body {
   padding: 0;
 }
 
-button {
+button
+{
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
 }
 
-button.continue {
+button.continue
+{
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
 }
 
-button.cancel {
+button.cancel
+{
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.content
+{
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.text
+{
+  padding-bottom: 1rem;
+}
+
+.header
+{
+  font-weight: 900;
+}
+
+.box-head
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal
+{
+  display: flex;
+  /* justify-content: center; */
+}
+
+.icon-container
+{
+  padding: 1rem;
 }
