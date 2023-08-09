@@ -1,27 +1,93 @@
+/* couldn't find a way to make the header and footer have equal padding on the left and the right; */
+/* help me, please! */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
+body
+{
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-img {
+ul
+{
+  list-style: none;
+}
+
+img
+{
   width: 600px;
 }
 
-button {
+button
+{
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
 }
 
-input {
+.page-box
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input
+{
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.left-links
+{
+  display: flex;
+}
+
+.right-links
+{
+  display: flex;
+}
+
+li
+{
+  padding: 1rem;
+}
+
+.header,
+.footer
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content
+{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer
+{
+  background-color: rgb(243, 242, 242);
+}
+
+.header-link,
+.footer-link
+{
+  text-decoration: none;
+  color: rgb(92, 92, 92);
 }
