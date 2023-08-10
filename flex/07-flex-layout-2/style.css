@@ -1,29 +1,105 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+html, body
+{
   margin: 0;
-  min-height: 100vh;
+  padding: 0;
+  height: 100%;
 }
 
-.header {
-  height: 72px;
-  background: darkmagenta;
+body
+{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidebar-link
+{
+  text-decoration: none;
   color: white;
 }
 
-.footer {
+.container
+{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header
+{
+  height: 72px;
+  background: darkmagenta;
+  color: white;
+
+  font-weight: bolder;
+  padding-left: 1%;
+}
+
+.footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 72px;
   background: #eee;
   color: darkmagenta;
 }
 
-.sidebar {
+.header
+{
+  display: flex;
+  align-items: center;
+}
+
+.content
+{
+  flex: 1;
+  display: flex;
+}
+
+.sidebar
+{
+  padding: 20px;
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
 }
 
-.card {
+.sidebar ul
+{
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li
+{
+  margin-bottom: 10px;
+}
+
+.main-content
+{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card
+{
+  width: calc(33.33% - 20px);
   border: 1px solid #eee;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  box-sizing: border-box;
+
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 960px)
+{ /* Adjust this breakpoint */
+  .card
+  {
+    width: calc(50% - 20px);
+  }
 }
